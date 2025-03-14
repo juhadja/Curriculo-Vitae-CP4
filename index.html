@@ -1,109 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo Vitae</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="hero-section">
-        <div class="container">
-            <img src="Frame 4 (1).png" class=" mx-auto d-block" alt="...">
-            <h1 class="display-4">Julia Hadja</h1>
-            <p class="lead">Desenvolvedor Web | Designer Gráfico | Especialista em UX/UI</p>
-            <a href="#contato" class="btn btn-light btn-lg">Contato</a>
-        </div>
-    </div>
-
-    <section id="sobre" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <p>Sou um profissional com experiência em desenvolvimento web, design gráfico e criação de interfaces
-                intuitivas. Busco sempre aprender novas tecnologias e me desafiar com novos projetos.</p>
-        </div>
-    </section>
-
-    <section id="habilidades" class="bg-light py-5">
-        <div class="container">
-            <h2 class="section-title">Habilidades</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">HTML & CSS</h5>
-                            <p class="card-text">Desenvolvimento front-end com HTML, CSS e Javascript.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">JavaScript</h5>
-                            <p class="card-text">Programação dinâmica com JavaScript.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">UX/UI</h5>
-                            <p class="card-text">Design centrado no usuário, criando interfaces funcionais.</p>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="p-2 text-bg-dark fixed-top">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 gap-4">
+            <li><a href="#contatos" class="nav-link px-2 text-white">Contatos</a></li>
+        </ul>
+    </header>
+    <main class="container">
+        <div class="p-md-3 rounded text-body-emphasis bg-body-secondary d-flex">
+            <img src="./Assets/Frame 4 (1).png" class="p-4 pt-5" alt="">
+            <div class="col-lg-6 px-0 p-5">
+                <h1 class="display-4 fst-italic fw-semibold pt-3">
+                    Julia Hadja
+                </h1>
+                <p class="lead my-3">Acadêmica de Engenharia de Software, na FIAP (Faculdade de Informática e Administração Paulista)</p>
             </div>
         </div>
-    </section>
 
-    <section id="experiencia" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Experiência Profissional</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Desenvolvedor Web - Empresa X</h5>
-                    <p>Jan 2020 - Presente</p>
-                    <ul>
-                        <li>Criação e manutenção de websites responsivos.</li>
-                        <li>Implementação de funcionalidades com JavaScript e React.</li>
-                        <li>Colaboração com designers e desenvolvedores para otimização de UI/UX.</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h5>Designer Gráfico - Empresa Y</h5>
-                    <p>Mar 2017 - Dez 2019</p>
-                    <ul>
-                        <li>Criação de materiais gráficos para campanhas de marketing.</li>
-                        <li>Desenvolvimento de identidade visual para marcas.</li>
-                        <li>Design de interfaces e protótipos de sites.</li>
-                    </ul>
-                </div>
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
             </div>
-        </div>
-    </section>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-body-color)"></rect></svg>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1 class="fs-3">Sobre mim</h1>
+                    <p class="fs-6">Sou estudante do segundo sementre do curso engenharia de software, na FIAP. Trabalho como assistente de desenvolvedor na empresa LigaTech, desde setembro de 2023.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-body-color)"></rect></svg>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1 class="fs-3">Habilidades</h1>
+                    <p class="fs-6">Desenvolvimento front-end com HTML, CSS e programação dinâmica com Javascript. UX/UI design centrado no usuário, interfaces funcionais</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-body-color)"></rect></svg>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1 class="fs-3">Objetivo</h1>
+                    <p class="fs-6">Ter a oportunidade de desenvolver-me profissionalmente, colocando em prática aspectos abordados em sala de aula. Fazer um bom trabalho em equipe, colaborando assim com meu crescimento profissional.</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="bg-dark text-white py-5">
-        <div class="container">
-            <h2 class="section-title">Contato</h2>
+        <div class="row mb-2 p-5">
+            <div class="col-md-6">
+              <div class="row g-0 bg-body-secondary overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0 p-2">Formação</h3>
+                    <p class="mb-auto fs-5 fw-medium"> - Escola Carlos Drummond de Andrade</p>
+                    <p class="fs-5">Ensino médio</p>
+                    <p>Início em janeiro de 2021 <br> Conclusão em dezembro de 2023</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row g-0 bg-body-secondary overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0 p-2">Experiências</h3>
+                  <p class="mb-auto fs-5 fw-medium"> - Assistente de desenvolvedor</p>
+                  <p class="fs-5">Empresa LigaTech</p>
+                  <p>Área de atuação: Desenvolvimento de sistemas<br>Atividade: Assistente de desenvolvedor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer class="p-2 text-bg-dark">
+        <div class="p-5 contatos">
+            <h2>Contatos</h2>
             <p>Entre em contato comigo para mais informações ou oportunidades de trabalho!</p>
-            <div class="contact-icons">
-                <a href="mailto:seuemail@dominio.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/seuperfil" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/seuperfil" target="_blank"><i class="fab fa-github"></i></a>
+            <div id="contatos">
+                <div class="d-flex gap-3">
+                    <img src="./Assets/whatsapp.png" alt="" width="24px" height="24px">
+                    <p>(11) 970567237</p>
+                </div>
+                <div class="d-flex gap-3">
+                    <img src="./Assets/envelope.png" alt="" width="24px" height="24px">
+                    <p>juliahadja@gmail.com</p>
+                </div>
+                
             </div>
         </div>
-    </section>
+    </footer>
 
-    <!-- Scripts do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Font Awesome para ícones -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
